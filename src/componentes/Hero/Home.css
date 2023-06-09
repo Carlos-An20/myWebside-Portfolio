@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+
+}       
+.hero h3{
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+}
+.hero h1 span{
+    color: #ff014f;
+}
+
+.hero h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff014f;
+}
+
+.hero h2 span{
+    color: rgb(19, 2, 2);
+}
+
+.hero p{ /*Parrafo */
+    color: #33373b;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+}   
+
+.hero_btn{
+    margin-top: 55px;
+}
+
+.hero_btn h4{
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #080808;
+    font-size: 20px;
+    margin: 30px 0 30px 0; 
+}
+
+.hero_btn button{
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+.button1{  /*Forma y tama;o de features*/
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 0px;
+}
+.button2{  /*Forma y tama;o de features*/
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-gap: 5px;
+}
+
+.hero_btn i{
+    font-size: 30px;
+}
+
+.hero_btn button img{
+    width: 70px;
+    height: 70px;
+}
+
+
+.hero .left{
+    margin-top: 5%;
+}
+
+.hero .right{ /*fondo de la foto*/
+    width: 180px;
+    position: relative;
+}
+
+.hero .right_img{
+    background: linear-gradient(145deg, #e2e8ec, #ffffff );
+    box-shadow: 4px 4px 8px #2e2885, 4px -4px 8px #ffffff;
+    border-radius: 20px;
+    height: 590px;
+    width: 470px;
+    margin-top: 15%;
+    top: 100px;
+}
+.right{
+    left: 120px;
+}
+
+.hero .right_img img{
+    position: absolute;
+    top: 95px;
+    right: 0;
+    left: 25%;    
+    width: 370px;
+    border-radius: 30px;
+}
+
+
+@media (max-width: 700px) {
+    .hero .right,
+    .hero .left {
+      width: 100%;
+      margin-left: 20px;
+    }
+  
+    .hero .f_flex {
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    .hero .right_img {
+        visibility: hidden;
+    }
+    
+  }
+  
